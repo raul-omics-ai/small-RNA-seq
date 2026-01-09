@@ -1,18 +1,30 @@
 #!/bin/bash
 
-# Automated script to perform quality control on microRNA sequencing data.
-# miRTrace QC mode characterizes each sample based on:
-# - Quality profile
-# - Read length distribution
-# - Sequencing depth
-# - miRNA complexity
-# - miRNA content
-
-# QC steps performed by miRTrace:
-# 1) Removal of low-quality reads (≥50% nucleotides with PHRED < 20)
-# 2) 3' adapter trimming
-# 3) Removal of low-complexity reads
-# 4) Removal of reads shorter than 18 nt
+## miRTrace Quality Control Pipeline
+#
+#This Bash script automates the preparation and execution of **miRTrace QC** for small RNA-seq data.
+#
+#It generates the required CSV configuration file and runs miRTrace in QC mode to assess
+#sample quality, read composition, and miRNA content.
+#
+### Features
+#- Automatic CSV generation for miRTrace
+#- Adapter trimming configuration
+#- Multi-sample support
+#- Species-specific QC
+#
+### Requirements
+#- Bash ≥ 4.0
+#- miRTrace
+#- gzip-compressed FASTQ files
+#
+### Input
+#- Trimmed or raw FASTQ files (`*.fastq.gz`)
+#
+### Output
+#- miRTrace HTML QC reports
+#- Summary statistics
+#- QC plots
 
 # Help function
 show_help() {

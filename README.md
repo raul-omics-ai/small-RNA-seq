@@ -22,7 +22,12 @@ Supported databases:
 
 ## 🚀 Usage
 ```bash
-bash mirna_pipeline.sh   -i fastq_trimmed/   -o results/   -g genome_index/genome   -s Hsa   -f mirbase   -t 14
+bash miRDeep2_script.sh   -i fastq_trimmed/
+                          -o results/  \
+                          -g genome_index/genome \
+                          -s Hsa \
+                          -f mirbase \
+                          -t 14
 ```
 
 ## 📂 Output Structure

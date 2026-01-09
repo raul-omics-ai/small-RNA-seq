@@ -43,11 +43,6 @@ In this pipeline, reference sequences were downloaded directly from the MirGeneD
    - **All mature miRNA sequences**
    - **All precursor sequences**
 
-The downloaded files are typically named similarly to:
-
-- `ALL-mat.fa` — mature miRNA sequences
-- `ALL-pre.fa` — precursor miRNA sequences
-
 ### Description
 
 - `ALL-mat.fa`: Mature miRNA sequences from all species in MirGeneDB

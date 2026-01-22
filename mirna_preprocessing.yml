@@ -1,0 +1,23 @@
+name: mirna_preprocessing
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconda::bioconductor-isomirs
+  - bioconda::fastx_toolkit
+  - bioconda::flexbar
+  - bioconda::htseq
+  - bioconda::randfold
+  - bioconda::sra-tools
+  - bioconda::viennarna
+  - conda-forge::pigz
+  - novoalign=3.03.02
+  - bioconda::fastp
+  - bioconda::trimmomatic
+  - bioconda::multiqc
+  - conda-forge::parallel
+  - bioconda::fastqc
+  - bioconda::cutadapt
+  - mirtrace
+prefix: /home/rfernandez/miniconda3/envs/mirna_preprocessing
